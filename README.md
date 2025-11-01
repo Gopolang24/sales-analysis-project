@@ -1,12 +1,12 @@
-# Retail Sales Analysis Project (SQL Only)
+#  Retail Sales Analysis Project (SQL Only)
 
-### MySQL Data Cleaning & Analytical Views
+###  MySQL Data Cleaning & Analytical Views
 
 This project demonstrates a complete **SQL-based data analytics workflow** — from cleaning raw retail sales data to generating reusable analytical views for insights.
 
 ---
 
-## Project Overview
+##  Project Overview
 
 **Goal:**  
 To analyze retail sales data and uncover actionable business insights such as:
@@ -22,7 +22,7 @@ To analyze retail sales data and uncover actionable business insights such as:
 
 ---
 
-## Database Schema
+##  Database Schema
 
 **Table:** `retail_sales`
 
@@ -42,7 +42,7 @@ To analyze retail sales data and uncover actionable business insights such as:
 
 ---
 
-## Step 1: Data Cleaning & Validation
+##  Step 1: Data Cleaning & Validation
 
 Performed key data cleaning operations:
 - Removed nulls, zeros, and invalid entries  
@@ -56,9 +56,9 @@ Performed key data cleaning operations:
 
 ---
 
-## Step 2: Analytical SQL Views
+##  Step 2: Analytical SQL Views
 
-### Performance & Trend Views
+###  Performance & Trend Views
 
 | View | Description |
 |------|--------------|
@@ -68,7 +68,7 @@ Performed key data cleaning operations:
 | `v_sales_with_shift` | Adds shift classification (Morning/Afternoon/Evening) |
 | `v_monthly_growth` | Month-over-month sales growth % using window functions |
 
-### Customer & Demographics Views
+###  Customer & Demographics Views
 
 | View | Description |
 |------|--------------|
@@ -77,7 +77,7 @@ Performed key data cleaning operations:
 | `v_gender_category_performance` | Sales by gender and category |
 | `v_age_group_sales` | Sales grouped by age segments (18–25, 26–35, etc.) |
 
-### Profitability & KPI Views
+###  Profitability & KPI Views
 
 | View | Description |
 |------|--------------|
@@ -88,7 +88,7 @@ Performed key data cleaning operations:
 
 ---
 
-## SQL Highlights
+##  SQL Highlights
 
 - Extensive use of **window functions** (`RANK()`, `LAG()`)  
 - Conditional logic via **CASE** for shifts and age segmentation  
@@ -97,47 +97,48 @@ Performed key data cleaning operations:
 
 ---
 
-## Insights Discovered (Example)
+##  Insights Discovered (Example)
 
-- **Customers aged 26–35** drive the highest sales volume  
-- **Electronics** and **Clothing** are top revenue categories  
-- **Afternoon** shift sees the most sales activity  
-- **November** was the most profitable month overall  
+-  **Customers aged 26–35** drive the highest sales volume  
+-  **Electronics** and **Clothing** are top revenue categories  
+-  **Afternoon** shift sees the most sales activity  
+-  **November** was the most profitable month overall  
 
 ---
 
-## Recommended Folder Structure
+##  Recommended Folder Structure
 
+```
 sales-analysis-project/
 │
 ├── sql/
-│ ├── sales_analysis.sql
-│ ├── data_cleaning.sql
-│ └── views/
-│ ├── v_clean_sales.sql
-│ ├── v_best_selling_month.sql
-│ └── v_kpi_dashboard.sql
+│   ├── sales_analysis.sql
+│   ├── data_cleaning.sql
+│   └── views/
+│       ├── v_clean_sales.sql
+│       ├── v_best_selling_month.sql
+│       └── v_kpi_dashboard.sql
 │
 └── README.md
-
+```
 
 ---
 
-## Tools Used
+##  Tools Used
 - **MySQL** — for data cleaning, validation, and analysis  
 - **GitHub** — for version control and sharing  
 - *(Power BI planned for future visualization phase)*  
 
 ---
 
-## Future Improvements
+##  Future Improvements
 - Add triggers for automatic validation logging  
 - Integrate stored procedures for periodic data updates  
 - Build Power BI dashboard using the existing SQL views  
 
 ---
 
-## Author
-**Created by:** *Gopolang mmutlwane* 
-GitHub: [github.com/Gopolang24](https://github.com/Gopolang24)  
+##  Author
+**Created by:** *[Gopolang]*  
+🔗 GitHub: [github.com/Gopolang24](https://github.com/Gopolang24)  
 
